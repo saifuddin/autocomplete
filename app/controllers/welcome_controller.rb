@@ -4,7 +4,7 @@ class WelcomeController < ApplicationController
   def search
     p params[:product][:brand_name]
     respond_to do |format|
-      format.json  { render :json => {:conn => 'dsa', :status => 'ddd'}.to_json }
+      format.json  { render :json => {:conn => 'dsa', :status => 'ddd'}.to_json, :status => 200 }
     end
   end
 

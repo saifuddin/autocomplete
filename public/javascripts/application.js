@@ -11,7 +11,6 @@
 // });
 
 $(function() {
-
     $('#new_product').submit(function(e) {  
     e.preventDefault();
     var valuesToSubmit = $(this).serialize();

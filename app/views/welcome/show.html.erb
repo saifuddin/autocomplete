@@ -1,6 +1,6 @@
-<h1>Welcome!</h1>
 <%= form_for @product do |f| %>
-  <%=f.label :brand_name %>
+  <%=f.label :cari %>
   <%=f.autocomplete_field :brand_name, welcome_autocomplete_brand_name_path %>
 <% end %>
-<%= link_to 'ID Element option example', welcome_id_element_example_path %>
+Tekan 'Enter' untuk cari.
+<%#= link_to 'ID Element option example', welcome_id_element_example_path %>
