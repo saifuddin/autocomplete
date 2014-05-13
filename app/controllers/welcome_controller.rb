@@ -2,8 +2,9 @@ class WelcomeController < ApplicationController
   autocomplete :brand, :name
 
   def search
-    respond_to do |f|
-      format.js { render :json => "{'dsa':1}"}
+    p params[:product][:brand_name]
+    respond_to do |format|
+      format.json  { render :json => {:conn => 'dsa', :status => 'ddd'}.to_json }
     end
   end
 
