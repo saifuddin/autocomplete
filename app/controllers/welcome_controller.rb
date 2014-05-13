@@ -1,8 +1,10 @@
 class WelcomeController < ApplicationController
   autocomplete :brand, :name
 
-  def method_name
-    
+  def search
+    respond_to do |f|
+      format.js { render :json => "{'dsa':1}"}
+    end
   end
 
   def show
