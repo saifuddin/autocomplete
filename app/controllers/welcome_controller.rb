@@ -1,6 +1,10 @@
 class WelcomeController < ApplicationController
   autocomplete :brand, :name
 
+  def method_name
+    
+  end
+
   def show
     @product = Product.new
   end

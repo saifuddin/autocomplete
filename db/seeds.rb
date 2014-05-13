@@ -6,9 +6,9 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
-Brand.create(:name => 'Alpha')
-Brand.create(:name => 'Beta')
-Brand.create(:name => 'Gama')
+Brand.create(:name => 'Alpha', :message => 'This message 1')
+Brand.create(:name => 'Beta', :message => 'This message 2')
+Brand.create(:name => 'Gama', :message => 'This message 3')
 BrandSubtype.create(:name => 'Alpha')
 BrandSubtype.create(:name => 'Beta')
 BrandSubtype.create(:name => 'Gama')
